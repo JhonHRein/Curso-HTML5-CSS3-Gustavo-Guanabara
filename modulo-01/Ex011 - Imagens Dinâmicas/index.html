@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/modulo-01/images/favicon_jr_3.0.png" type="image/x-icon">
-    <title>Imagens Dinâmicas</title>
+    <title>Midias em HTML5</title>
 </head>
 <body>
-    <h1></h1>
-    <p></p>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente ou diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px )" srcset="/modulo-01/images/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="/modulo-01/images/foto-m.png" type="image/png">
+        <img src="/modulo-01/images/foto-g.png" alt="imagem flexivel">
+    </picture>
     
 </body>
 </html>
