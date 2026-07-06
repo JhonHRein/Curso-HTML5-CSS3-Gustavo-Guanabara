@@ -3,17 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/modulo-01/images/favicon_jr_3.0.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/favicon_jr_3.0.png" type="image/x-icon">
     <title>Midias em HTML5</title>
 </head>
 <body>
     <h1>Imagem Dinâmica</h1>
     <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente ou diminua o tamanho do seu navegador.</p>
+    
     <picture>
-        <source media="(max-width: 750px )" srcset="/modulo-01/images/foto-p.png" type="image/png">
-        <source media="(max-width: 1050px)" srcset="/modulo-01/images/foto-m.png" type="image/png">
-        <img src="/modulo-01/images/foto-g.png" alt="imagem flexivel">
+        <source media="(max-width: 750px )" srcset="../images/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="../images/foto-m.png" type="image/png">
+        <img src="../images/foto-g.png" alt="imagem flexivel">
     </picture>
+    
+    <h1>Reproduzindo Áudios</h1>
+<p>Vamos aprender a reproduzir áudios em HTML5.</p>
+
+<audio controls preload="auto">
+    <source src="../midia/audios/amar_como_vc_me_ama.MP3" type="audio/mpeg">
+    <!-- <source src="../midia/audios/amar_como_vc_me_ama.MP3" type="audio/ogg">
+    <source src="../midia/audios/amar_como_vc_me_ama.MP3" type="audio/wav"> -->
+    
+    <p>Infelizmente seu navegador é antigo e não suporta áudio nativo. 
+       <a href="../midia/amar_como_vc_me_ama.mp3" download="musica_amar_como_voce.mp3">
+          Clique aqui para baixar o arquivo MP3.
+       </a>
+    </p>
+</audio>
     
 </body>
 </html>
