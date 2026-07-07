@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="pt-br">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/modulo-01//images/favicon_jr_3.0.png" type="image/x-icon">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo Vídeos hospedados localmente.</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <!-- <video src="../midia/videos/amar_como_voce_me_ama.mp4" width="500" controls></video> -->
+
+    <video controls width="500">
+        <source src="../midia/videos/amar_como_voce_me_ama.mp4" type="video/mp4">
+        <!-- Menssagem aparece quando temos multiplos <source> com formatos webm, mp4, m4v... e varios formatos de videos e nao abre no navegador do cliente. -->
+        <p>Seu navegador não tem compatibilidade com a reprodução de vídeo.</p>
+    </video>
+
+</body>
+</html>
