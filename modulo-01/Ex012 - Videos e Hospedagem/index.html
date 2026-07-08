@@ -1,21 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="pt-br">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/modulo-01//images/favicon_jr_3.0.png" type="image/x-icon">
     <title>Videos com HTML5</title>
 </head>
 <body>
-    <h1>Inserindo Vídeos hospedados localmente.</h1>
+    <h1>INSERINDO VÍDEOS LOCALMENTE.</h1>
     <p>Este vídeo está hospedado no meu próprio servidor.</p>
-    <!-- <video src="../midia/videos/amar_como_voce_me_ama.mp4" width="500" controls></video> -->
-
-    <video controls width="500">
+    <p>Video abaixo esta utilizando poster com link da web. Diferente das imagens do video.</p>
+    <p>Lembrete, para esse exercício utilizei a imagem de poster da rede. mas a regra de ouro é manter a autonomia total para projetos reais.</p>
+    <video controls width="500" poster="https://www.shutterstock.com/image-photo/jesus-lamb-walking-away-facing-260nw-2688594065.jpg">
         <source src="../midia/videos/amar_como_voce_me_ama.mp4" type="video/mp4">
-        <!-- Menssagem aparece quando temos multiplos <source> com formatos webm, mp4, m4v... e varios formatos de videos e nao abre no navegador do cliente. -->
-        <p>Seu navegador não tem compatibilidade com a reprodução de vídeo.</p>
     </video>
-
+    
+    <h1>INSERINDO VÍDEOS USANDO "IFRAME" E EMBED.</h1>
+        <p>A utilizaçao da TAG:"iframe" é o padrão atual em 2026 na data desse index. Diferente da video aula do Guanabara; pois a aula do professor foi gravada em 2021, época, utilizava outros meios para esse mesmo fim, métodos utilizado no capitulo 11- aula 6 não foram aplicados aqui.</p>
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/SFkYgezG0PQ?si=9gUZB35-T39fY7G0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </body>
 </html>
