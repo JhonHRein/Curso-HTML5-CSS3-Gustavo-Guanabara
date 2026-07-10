@@ -1,0 +1,17 @@
+ @charset "UTF-8"; 
+ /* Quando se tem um @ é uma regra.*/
+
+        body {
+         /*Imagem retirada da web apenas para esse exercício.*\
+         /* 1. Imagem de fundo com uma película preta transparente (0.5) para dar o efeito translúcido */
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://c4.wallpaperflare.com/wallpaper/746/504/15/design-style-interior-cottage-wallpaper-preview.jpg');
+        
+        /* 2. Ajuste de tamanho */
+        background-size: cover;
+        
+        /* 3. Configurações de texto (Sem text- na frente, apenas color!) */
+        color: white; 
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: justify;
+        }
+    
