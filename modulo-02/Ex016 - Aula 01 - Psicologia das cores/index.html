@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos - Capítulo 13: Cores</title>
+</head>
+<body>
+<!--
+================================================================================
+          CURSO DE HTML5 E CSS3 - PROFESSOR GUSTAVO GUANABARA
+                    MÓDULO 2 - CAPÍTULO 13: CORES
+================================================================================
+
+Este arquivo serve como um guia completo de consulta rápida sobre cores no CSS.
+Você pode mantê-lo aberto no VS Code enquanto codifica seus projetos!
+
+--------------------------------------------------------------------------------
+1. A PSICOLOGIA E A EMOÇÃO DAS CORES
+--------------------------------------------------------------------------------
+As cores têm um impacto psicológico direto no subconsciente do usuário. Cerca de
+90% das decisões rápidas de compra ou permanência em um site são baseadas na cor.
+
+* AZUL:
+  - Sentimentos: Confiança, segurança, profissionalismo, calma.
+  - Onde usar: Sites corporativos, bancos, tecnologia (ex: Facebook, LinkedIn).
+  - ALERTA: Evite em sites de comida (o azul reduz naturalmente o apetite).
+
+* VERMELHO:
+  - Sentimentos: Urgência, paixão, perigo, fome, energia.
+  - Onde usar: Botões de compra urgente, marcas de alimentos (ex: Coca-Cola, McDonald's).
+
+* AMARELO:
+  - Sentimentos: Otimismo, atenção, alegria.
+  - ALERTA: Use com moderação. Amarelo em excesso cansa os olhos e pode parecer amador/spam.
+
+* VERDE:
+  - Sentimentos: Saúde, natureza, frescor, tranquilidade, dinheiro/finanças.
+  - Onde usar: Sites médicos, produtos ecológicos, plataformas financeiras.
+
+* ROXO / PRETO:
+  - Sentimentos: Luxo, elegância, mistério, sofisticação.
+  - Onde usar: Produtos premium, perfumes, cosméticos e marcas de alta moda.
+
+--------------------------------------------------------------------------------
+2. HARMONIA E O CÍRCULO CROMÁTICO
+--------------------------------------------------------------------------------
+O Círculo Cromático divide as cores em Primárias, Secundárias e Terciárias, e nos
+ajuda a criar paletas agradáveis por meio de regras de harmonia:
+
+* CORES QUENTES: Transmitem calor, energia e proximidade (Vermelho, Laranja, Amarelo).
+* CORES FRIAS: Transmitem calma, frescor e distanciamento (Azul, Verde, Violeta).
+
+* TIPOS DE HARMONIA:
+  - Monocromática: Usa apenas uma única cor (uma matiz), alterando apenas o seu
+    brilho e a saturação. Ótimo para degradês limpos.
+  - Análoga: Usa cores vizinhas no círculo (ex: Azul, Azul-Esverdeado e Verde).
+    Gera baixo contraste, mas um visual extremamente agradável e elegante.
+  - Complementar: Usa cores que ficam em lados opostos no círculo (ex: Azul e Laranja).
+    Gera um altíssimo contraste visual, ótimo para destacar botões e chamadas.
+
+--------------------------------------------------------------------------------
+3. FORMAS DE REPRESENTAR CORES NO CSS
+--------------------------------------------------------------------------------
+Existem 4 formas principais de declarar cores em propriedades como 'color' e
+'background-color':
+
+a) Nome da Cor (Color Names):
+   Exemplo: color: blue; (Limitado a 147 nomes padrão)
+
+b) Hexadecimal (#RRGGBB):
+   Mapeia Vermelho (Red), Verde (Green) e Azul (Blue) de "00" (nada) a "FF" (máximo).
+   Exemplo: color: #ff0000; /* Vermelho puro */
+   
+   TRUQUE SHORTHAND (Abreviação):
+   Quando os pares se repetem, você pode resumir de 6 para 3 dígitos:
+   - #ffffff vira #fff  (Branco)
+   - #000000 vira #000  (Preto)
+   - #ff0000 vira #f00  (Vermelho)
+   - #aabbcc vira #abc
+
+c) Função RGB (rgb(R, G, B)):
+   Define a mistura de Red, Green e Blue em escala decimal de 0 a 255.
+   Exemplo: color: rgb(255, 0, 0); /* Vermelho puro */
+
+d) Função HSL (hsl(H, S, L)):
+   Representa as cores de forma mais intuitiva para o olho humano:
+   - H (Hue/Matiz): O ângulo no círculo cromático (0 a 360). 0=Vermelho, 120=Verde, 240=Azul.
+   - S (Saturation/Saturação): O quão viva é a cor (0% cinza até 100% cor pura).
+   - L (Lightness/Luminosidade): O brilho da cor (0% preto total até 100% branco total).
+   Exemplo: color: hsl(240, 100%, 50%); /* Azul puro */
+
+--------------------------------------------------------------------------------
+4. CORES COM TRANSPARÊNCIA (O canal Alpha)
+--------------------------------------------------------------------------------
+Para adicionar opacidade diretamente nas cores, usamos RGBA ou HSLA.
+O último valor (Alpha) vai de 0 (totalmente transparente) a 1 (totalmente opaco).
+
+Exemplos:
+- background-color: rgba(0, 0, 0, 0.5);   /* Preto com 50% de transparência */
+- background-color: hsla(120, 100%, 50%, 0.3); /* Verde com 30% de transparência */
+
+--------------------------------------------------------------------------------
+5. GRADIENTES (DEGRADÊ) NO CSS
+--------------------------------------------------------------------------------
+Como os gradientes são interpretados pelo navegador como imagens, usamos a
+propriedade 'background-image' (e NÃO 'background-color') para aplicá-los.
+
+a) Gradiente Linear (linear-gradient):
+   Cria uma transição de cores em linha reta. É possível definir a direção em graus (deg)
+   ou palavras-chave (to right, to top, to bottom right).
+   
+   Sintaxe básica:
+   background-image: linear-gradient(direção, cor1, cor2, ...);
+
+   Exemplos prácticos:
+   - background-image: linear-gradient(to right, #fff, #000); /* Da esquerda para a direita */
+   - background-image: linear-gradient(45deg, blue, red); /* Inclinação de 45 graus */
+   - background-image: linear-gradient(to right, red 20%, yellow 80%); /* Controlando a parada das cores */
+
+b) Gradiente Radial (radial-gradient):
+   Cria uma transição circular partindo de um ponto central.
+   
+   Sintaxe básica:
+   background-image: radial-gradient(formato, cor1, cor2, ...);
+
+   Exemplo práctico:
+   - background-image: radial-gradient(circle, white, blue);
+
+--------------------------------------------------------------------------------
+6. ACESSIBILIDADE E REGRA DE OURO DO CONTRASTE
+--------------------------------------------------------------------------------
+- Texto escuro precisa de fundo claro.
+- Texto claro precisa de fundo escuro.
+- NUNCA use texto verde em fundo vermelho (inviabiliza totalmente a leitura por daltônicos).
+- Evite texto amarelo em fundo branco (contraste quase nulo, fadiga visual imediata).
+
+--------------------------------------------------------------------------------
+7. FERRAMENTAS PARA SALVAR NOS FAVORITOS
+--------------------------------------------------------------------------------
+* Adobe Color (color.adobe.com): Para criar paletas com base nas regras de harmonia.
+* ColorZilla (Extensão de navegador): Um conta-gotas para capturar cores de qualquer site.
+* Coolors.co: Gerador rápido de paletas de cores super moderno.
+
+================================================================================
+DICA NO VS CODE: Posicione o cursor do mouse em cima de qualquer cor do seu CSS
+(HEX, RGB ou HSL) para abrir o paletizador visual integrado do VS Code!
+================================================================================
+-->
+
+</body>
+</html>
