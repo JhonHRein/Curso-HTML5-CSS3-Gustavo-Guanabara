@@ -1,0 +1,48 @@
+@charset "utf-8";
+body{
+    background-color: #73acd6;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+
+}
+
+/*Aqui com o simbolo do # estamos especificando com id apenas esse h1 em específico
+SELETOR PERSONALIZADO*/
+h1#principal {
+    text-decoration:underline;
+    color: antiquewhite;
+
+}
+
+/*Aqui com o simbolo ponto " . " estamos especificando as classes do h2, multiplas ordens para vários parametros.*/
+h2.secundario {
+    color: rgb(30, 155, 105);
+}
+
+/*Aqui o ponto destaque sem a tag especificada, atua como uma classe "global" quando chamada no html.*/
+.destaque {
+    background-color: rgba(255, 0, 0, 0.228);
+    color: red;
+}
+
+h1 {
+    color: rgb(1, 1, 150);
+    text-align: center;
+    
+}
+
+h2 {
+    color: rgb(30, 70, 163);
+}
+p { 
+
+}
+
+/*
+lembrete: Para envelopar texto selecionado
+1. Seleciona o texto no HTML
+2. Ctrl + Shift + P  (ou Ctrl + P e digita >)
+3. Digita: wrap
+4. Aperta Enter
+5. Digita a tag desejada (ex: p)
+6. Aperta Enter*/
