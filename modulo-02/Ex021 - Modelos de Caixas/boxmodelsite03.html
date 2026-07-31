@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/images/favicon_jr_3.0.png" type="image/x-icon">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: gray;
+            margin: 0px;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 2px 2px 2px black;
+        }
+        nav {
+            background-color: rgb(95, 99, 98);
+            padding: 3px;
+            display: inline-block;
+            
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        #assuntos {
+            background-color: azure;
+            max-width: 300px;
+            text-align: justify;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 6px 7px 3px rgb(2, 12, 69);
+            
+        }
+        #noticias {
+            background-color: white;
+            max-width: 300px;
+            text-align: justify;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 6px 7px 3px rgb(9, 5, 93);
+        }
+        main {
+            display: flex;
+            
+            
+            
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            width:fit-content;
+            margin: 1px auto;
+        }
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <h2 style="background-color: #767474; ">CORINTHIANS</h2>
+                <p>O Sport Club Corinthians Paulista vive mais um momento decisivo nesta temporada.
+                A equipe segue focada nos treinos para ajustar os últimos detalhes táticos em campo.
+                Com o apoio incondicional da torcida, o elenco busca somar pontos cruciais na tabela.
+                 treinador destacou a importância de manter a concentração durante os noventa minutos.
+                A expectativa é de uma partida movimentada e cheia de emoções para os torcedores.</p>
+        </section>
+        
+        <section id="noticias">
+            <article>
+                <h2 style="background-color: #767474;">ESTADIO</h2>
+                <p>A Neo Química Arena se prepara para receber mais um grande público no fim de semana.
+                A estrutura do estádio conta com alta tecnologia para garantir o conforto dos torcedores.
+                O gramado passou por manutenções recentes e está em excelentes condições para o jogo.
+                A movimentação nos arredores deve começar cedo com a chegada das organizadas.
+                Os portões serão abertos com antecedência para facilitar o acesso de todos com segurança.</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo Curso em video</p>
+    </footer>
+
+</body>
+</html>
