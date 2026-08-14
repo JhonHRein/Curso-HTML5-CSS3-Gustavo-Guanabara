@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+@font-face{
+font-family: 'fonte-android';
+src: url('fontes/idroid.otf') format('opentype');
+}
+
+body {
+    background-color: #93ac6734;
+    font-family: link;
+} 
+
+header {
+    background-color: #164e43;
+    font-family: fonte-android;
+    color:white;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    margin: auto;
+}
+
+nav {
+    background-color: #66beac; 
+    padding: 1px;
+    box-sizing: 1px;
+}
+nav > a {
+   
+   color:white;
+   text-decoration:
+   ;
+}
+
+   
+
+
+footer {
+    background-color: #164e43;
+    font-family: fonte-android;
+    color:white;
+    padding: 2 ;
+    text-align: center;
+    margin: 2px auto;
+}
