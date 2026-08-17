@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset "utf-8";
 
 @font-face{
 font-family: 'fonte-android';
@@ -6,8 +6,9 @@ src: url('fontes/idroid.otf') format('opentype');
 }
 
 body {
-    background-color: #93ac6734;
+    background-color: #c9d799a4;
     font-family: link;
+    margin: auto;
 } 
 
 header {
@@ -18,25 +19,35 @@ header {
     text-align: center;
     margin: auto;
 }
+main {
+    max-width: 1000px; /* Limita a largura máxima para não esticar em telas grandes */
+    margin: 0 auto;    /* Centraliza o bloco na tela */
+    padding: 20px;     /* Garante uma margem interna de segurança */
+}
 
 nav {
-    background-color: #66beac; 
+    background-color: #164e43; 
     padding: 1px;
     box-sizing: 1px;
+    margin: 2px auto;
+
 }
 nav > a {
    
    color:white;
-   text-decoration:
-   ;
+   text-decoration:underline;
+   font-weight: bold;
+   padding: 10px 15px;
+   border-radius: 5px;
+   transition-duration: 0.5s;
+}
+nav > a:hover {
+    background-color: #2fa866;
+    color: #1a5c38;
 }
 
-   
-
-
-footer {
+   footer {
     background-color: #164e43;
-    font-family: fonte-android;
     color:white;
     padding: 2 ;
     text-align: center;
