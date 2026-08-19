@@ -1,19 +1,32 @@
 @charset "utf-8";
 
-@font-face{
-font-family: 'fonte-android';
-src: url('fontes/idroid.otf') format('opentype');
+
+@font-face {
+    font-family: 'android';
+    src: url(fontes/idroid.otf);
+    font-weight: normal;
+
+}
+
+:root {
+    --cor0: #c9d799a4;
+    --cor1: #164e43;
+    --cor2: #2fa866;
+    --cor3: #1a5c38;
+
+    --font-padrao: arial, verdana, helvetica, sans-serif;
+    --font-android: 'android';
 }
 
 body {
     background-color: #c9d799a4;
-    font-family: link;
+    font-family:var(--font-padrao);
     margin: auto;
 } 
 
 header {
     background-color: #164e43;
-    font-family: fonte-android;
+    font-family: var(--font-android);
     color:white;
     padding: 10px 10px 10px 10px;
     text-align: center;
@@ -23,6 +36,14 @@ main {
     max-width: 1000px; /* Limita a largura máxima para não esticar em telas grandes */
     margin: 0 auto;    /* Centraliza o bloco na tela */
     padding: 20px;     /* Garante uma margem interna de segurança */
+}
+
+h1 {
+    font-family: var(--font-android);
+}
+
+h2 {
+    font-family: var(--font-android);
 }
 
 nav {
@@ -46,7 +67,11 @@ nav > a:hover {
     color: #1a5c38;
 }
 
-   footer {
+main > h1 {
+    font-family: var(--font-android);
+}
+
+footer {
     background-color: #164e43;
     color:white;
     padding: 2 ;
