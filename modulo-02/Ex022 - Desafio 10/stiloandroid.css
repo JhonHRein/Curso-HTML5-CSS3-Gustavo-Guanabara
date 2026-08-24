@@ -1,11 +1,9 @@
 @charset "utf-8";
 
-
 @font-face {
     font-family: 'android';
     src: url(fontes/idroid.otf);
     font-weight: normal;
-
 }
 
 :root {
@@ -18,63 +16,87 @@
     --font-android: 'android';
 }
 
+/* Reset global para garantir alinhamento perfeito em todas as caixas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: #c9d799a4;
-    font-family:var(--font-padrao);
-    margin: auto;
+    background-color: #b2c965a4;
+    font-family: var(--font-padrao);
 } 
 
 header {
     background-color: #164e43;
     font-family: var(--font-android);
-    color:white;
-    padding: 10px 10px 10px 10px;
+    color: white;
+    max-width: 1000px;
+    min-width: 300px;
+    padding: 20px 10px;
     text-align: center;
-    margin: auto;
-}
-main {
-    max-width: 1000px; /* Limita a largura máxima para não esticar em telas grandes */
-    margin: 0 auto;    /* Centraliza o bloco na tela */
-    padding: 20px;     /* Garante uma margem interna de segurança */
+    margin: 10px auto 0 auto;
+    border-radius: 10px 10px 0 0;
 }
 
-h1 {
-    font-family: var(--font-android);
-}
-
-h2 {
-    font-family: var(--font-android);
+header h2 {
+    font-size: 12px;
 }
 
 nav {
     background-color: #164e43; 
-    padding: 1px;
-    box-sizing: 1px;
+    padding: 10px;
+    min-width: 300px;
+    max-width: 1000px;
     margin: 2px auto;
+}
 
-}
 nav > a {
-   
-   color:white;
-   text-decoration:underline;
-   font-weight: bold;
-   padding: 10px 15px;
-   border-radius: 5px;
-   transition-duration: 0.5s;
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition-duration: 0.5s;
 }
+
 nav > a:hover {
     background-color: #2fa866;
     color: #1a5c38;
 }
 
-main > h1 {
+main {
+    background-color: azure;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    min-width: 300px;
+    max-width: 1000px;
+    margin: 0 auto 20px auto;
+    padding: 20px;
+}
+
+main img {
+    width: 100%;
+}
+
+main img.pequena {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+main h1, main h2, main h3 {
     font-family: var(--font-android);
+    text-decoration: underline;
 }
 
 footer {
     background-color: #164e43;
-    color:white;
-    padding: 2 ;
+    color: white;
+    padding: 10px;
     text-align: center;
-    margin: 2px auto;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 5px;
 }
