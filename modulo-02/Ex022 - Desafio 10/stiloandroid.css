@@ -1,8 +1,11 @@
 @charset "utf-8";
 
+/* ==========================================
+   1. FONTES E VARIÁVEIS
+   ========================================== */
 @font-face {
     font-family: 'android';
-    src: url(fontes/idroid.otf);
+    src: url('fontes/idroid.otf');
     font-weight: normal;
 }
 
@@ -16,7 +19,9 @@
     --font-android: 'android';
 }
 
-/* Reset global para garantir alinhamento perfeito em todas as caixas */
+/* ==========================================
+   2. RESET E ESTILOS GERAIS
+   ========================================== */
 * {
     margin: 0;
     padding: 0;
@@ -28,24 +33,31 @@ body {
     font-family: var(--font-padrao);
 } 
 
+/* ==========================================
+   3. HEADER
+   ========================================== */
 header {
-    background-color: #164e43;
+    background-color: var(--cor1);
     font-family: var(--font-android);
     color: white;
     max-width: 1000px;
     min-width: 300px;
     padding: 20px 10px;
     text-align: center;
-    margin: 10px auto 0 auto;
+    margin: 0 auto;
     border-radius: 10px 10px 0 0;
+    text-shadow: 6px 5px 2px black;
 }
 
 header h2 {
     font-size: 12px;
 }
 
+/* ==========================================
+   4. NAVEGAÇÃO (NAV)
+   ========================================== */
 nav {
-    background-color: #164e43; 
+    background-color: var(--cor1); 
     padding: 10px;
     min-width: 300px;
     max-width: 1000px;
@@ -62,10 +74,13 @@ nav > a {
 }
 
 nav > a:hover {
-    background-color: #2fa866;
-    color: #1a5c38;
+    background-color: var(--cor2);
+    color: var(--cor3);
 }
 
+/* ==========================================
+   5. CONTEÚDO PRINCIPAL (MAIN)
+   ========================================== */
 main {
     background-color: azure;
     border-radius: 0 0 10px 10px;
@@ -76,27 +91,82 @@ main {
     padding: 20px;
 }
 
+/* Tipografia do Main */
+main h1, main h2, main h3 {
+    font-family: var(--font-android);
+    background-image: linear-gradient(to right, rgb(142, 234, 142), transparent);
+}
+
+main h2 {
+    font-size: 1.1em;
+}
+
+main p { 
+    margin: 15px;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+main strong {
+    color: rgb(59, 227, 36);
+    font-weight: bold;
+}
+
+/* Mídias no Main */
 main img {
     width: 100%;
 }
 
 main img.pequena {
-    width: 50%;
+    max-width: 350px;
     display: block;
     margin: auto;
 }
 
-main h1, main h2, main h3 {
-    font-family: var(--font-android);
-    text-decoration: underline;
+/* Links no Main */
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(49, 73, 229);
+    background-color: aquamarine;
+    padding: 1px 4px;
 }
 
+main a:hover {
+    text-decoration: underline;
+    color: gray;
+}
+
+/* Blocos de Conteúdo Secundário (Aside) */
+aside ul {
+    margin: 30px;
+}
+
+/* ==========================================
+   6. RODAPÉ (FOOTER)
+   ========================================== */
 footer {
-    background-color: #164e43;
+    background-color: var(--cor1);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
     color: white;
     padding: 10px;
     text-align: center;
     max-width: 1000px;
     margin: 0 auto;
     border-radius: 5px;
+}
+
+footer a {
+    color: rgb(178, 217, 227); 
+    padding: 1px 2px; 
+    background-color: var(--cor2); 
+    border-radius: 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    background-color: aqua;
+    color: rgb(5, 43, 68);
+    transition-duration: 0.5s;
 }
