@@ -166,9 +166,7 @@ aside ul {
     columns: 2;
 }
 
-/* ==========================================
-   6. RODAPÉ (FOOTER)
-   ========================================== */
+
 footer {
     background-color: var(--cor1);
     font-family: 'Times New Roman', Times, serif;
