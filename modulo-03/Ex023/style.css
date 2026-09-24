@@ -1,5 +1,20 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'fontecordel';
+    src: url('../font/OleoScript-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'fontesegunda';
+    src: url('../font/PlaywriteNZGuides-Regular.ttf');
+}
+
+:root {
+    --fonte-cordel: 'fontecordel', cursive;
+    --fonte-segunda: 'fontesegunda', sans-serif;
+}
+
 * {
     padding: 0px;
     margin: 0px;
@@ -11,6 +26,7 @@ html, body {
 }
 
 header {
+    font-family: var(--fonte-segunda);
     background-color: black;
     color: white;
     text-align: center;
