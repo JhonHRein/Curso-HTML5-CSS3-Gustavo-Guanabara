@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styletabela002.css">
-    <title>Uso de Tabelas Grandes</title>
+    <title>Tabelas 02</title>
 </head>
 <body>
     <!-- ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             TR,TD,TH
         THEAD
             TR,TD,TH
@@ -17,10 +18,12 @@
         TFOOT
             TR,TD,TH -->
 </body>
+    <h1>Uso de tabelas grandes</h1>
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 50px;">População</th>
         </thead>
         
         <tbody>
@@ -63,8 +66,8 @@
         </tbody>
         
         <tfoot>
-            <th>Total de Habitantes</th>
-            <td>86.285.400</td>
+            <th scope="row">Total de Habitantes</th>
+            <td class="num">86.285.400</td>
         </tfoot>
     </table>
 </html>
