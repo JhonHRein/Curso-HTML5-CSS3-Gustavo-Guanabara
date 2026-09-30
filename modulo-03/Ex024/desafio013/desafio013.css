@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: separate;
+    margin-bottom: 20px;
+}
+caption {
+    font-weight: bold;
+    padding: 5px;
+}
+
+thead {
+    background-color: gray;
+    color: yellow;
+}
+
+tr, td {
+    border: 1px solid black;
+    padding: 10px;
+    width: 50px;
+    text-align: center;
+    
+}
+
+
+
+
+
