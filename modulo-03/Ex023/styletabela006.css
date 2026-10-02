@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: beige;
+}
+
+table {
+    border: 1px solid black;
+    width: 500px;
+    border-collapse: separate;
+}
+caption {
+    font-size: 1.2em;
+    font-weight: bolder;
+    padding: 20px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 1.5px;
+}
+tr:nth-child(even) {
+    background-color: grey;
+}
+div#container {
+    overflow-x: auto;   /*Overflow sign - conteudo que transborda*/
+}
+/*Dica: envelopa a tabela toda em uma DIV , ID "container", usa o overflow-x */
