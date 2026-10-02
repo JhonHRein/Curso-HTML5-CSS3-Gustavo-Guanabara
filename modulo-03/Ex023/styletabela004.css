@@ -1,23 +1,28 @@
 @charset "UTF-8";
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:Arial, Helvetica, sans-serif ;
 }
 table {
-    width: 500px;
-    border-collapse: collapse;
-} 
+    background-color: #989595d6;
+    border-collapse: separate;
+    border-style: groove;
+}
 
 caption {
-    font-size: 1.3em;
-    font-weight: bolder;
-    padding: 8px;
+    padding: 2px;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+    text-transform: uppercase;
 }
 
-tr, td, th {
+td, tr, th {
     border: 1px solid black;
-    padding: 8px;
+    padding: 5px;
+    text-align: center;
 }
 
-col.cnome {
-    background-color: rgb(114, 193, 110);
+thead {
+    background-color: darkslategray;
+    color: yellow;
 }

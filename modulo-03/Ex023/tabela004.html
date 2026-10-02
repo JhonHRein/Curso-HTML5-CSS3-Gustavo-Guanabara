@@ -4,74 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styletabela004.css">
-    <title>Exercício tabela</title>
+    <title>Tabela Filmes</title>
 </head>
 <body>
     <h1>Exercício de Tabelas</h1>
-    
     <table>
-        <colgroup>      <!-- Tag para alterar toda uma coluna (estilo uma variavel)-->
-            <col class="cnome">
-            <col class="csexo">
-            <col class="cidade">
-            <col class="cprof">
-        </colgroup>
-        <caption>Cadastro</caption>
-        <tr>
-            <th scope="col">Nome</th>
-            <th scope="col">Sexo</th>
-            <th scope="col">Idade</th>
-            <th scope="col">Profissão</th>
-        </tr>
-        <tr>
-            <td>Ana Maria</td>
-            <td>F</td>
-            <td>25</td>
-            <td>Jornalista</td>
-        </tr>
-        <tr>
-            <td>Ana Beatriz</td>
-            <td>F</td>
-            <td>20</td>
-            <td>Advogada</td>
-        </tr>
-        <tr>
-            <td>Flavia Aparecida</td>
-            <td>F</td>
-            <td>15</td>
-            <td>Estudante</td>
-        </tr>
-        <tr>
-            <td>Gleicine Morais</td>
-            <td>F</td>
-            <td>29</td>
-            <td>Funcionaria Pública</td>
-        </tr>
-        <tr>
-            <td>Jhon Herbert Rein</td>
-            <td>M</td>
-            <td>37</td>
-            <td>Desenvolvedor</td>
-        </tr>
-        <tr>
-            <td>Ricardo de Freitas</td>
-            <td>M</td>
-            <td>45</td>
-            <td>Chefe de Setor</td>
-        </tr>
-        <tr>
-            <td>Herbert Rein</td>
-            <td>M</td>
-            <td>38</td>
-            <td>Auxiliar de Produção</td>
-        </tr>
-        <tr>
-            <td>Bruno Rein</td>
-            <td>M</td>
-            <td>34</td>
-            <td>Pintor Predial</td>
-        </tr>
+        <caption>Filmes Favoritos</caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupo</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
+            </tr>
+        </thead>
+       <tbody>
+            <tr>
+                <th rowspan="4" scope="rowgroup">Mulheres</th>
+            </tr>
+            
+            <tr>
+                <td>Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            
+            <tr>
+                <td>Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr> 
+            
+            <tr>   
+                <td>Cláudia Melo</td>
+                <td>Oblivion</td>
+                <td>Matriz</td>
+                <td>Big Hero</td>
+            </tr>
+            
+            <tr>
+                <th rowspan="4" scope="rowgroup">Homens</th>
+            </tr>
+            <tr>
+                <td>Bruno Mendonça</td>
+                <td>Intocáveis</td>
+                <td>Amnésia</td>
+                <td>Gladiador</td>
+            </tr>
+            <tr>
+                <td>Daniel Lourenço</td>
+                <td>Wall-E</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>    
+                <td>Fabiano Mota</td>
+                <td>Star Wars 5</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+
+            <tfoot>
+                <tr>
+                    <th colspan="4" scope="row">Total</th>
+                    <td scope>1000</td>
+                </tr>
+            </tfoot>
+        </tbody>
     </table>
-    
 </body>
 </html>
