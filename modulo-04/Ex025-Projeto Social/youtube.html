@@ -8,31 +8,44 @@
         * {
             margin: 0px;
             padding: 0px;
+            box-sizing: border-box;
         }
 
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden; /* Evita qualquer barra de rolagem horizontal indesejada */
+        }
+
+        /* Oculta a barra de rolagem no Chrome, Safari e Opera */
         ::-webkit-scrollbar {
-            margin: 0px;
-            padding: 0px;
+            width: 0px;
+            height: 0px;
+            display: none;
         }
-        img {
-            width: 100vw;
 
+        img {
+            width: 100%;
+            display: block; /* Remove espaços fantasmas abaixo da imagem */
         }
 
         a {
             display: block;
             background-color: darkred;
-            padding: 20px;
             color: white;
+            padding: 20px;
             text-align: center;
             font-weight: bolder;
             text-decoration: none;
+        }
+        a:hover {
+            background-color: brown;
         }
 
     </style>
 </head>
 <body>
-    <img src="imagens/logo-youtube.jpg" alt="YouTube"><a href="https://www.youtube.com/@cursoemvideo" target="_blank">Acesse</a>
+    <img src="imagens/tela-youtube.png" alt="YouTube"><a href="https://www.youtube.com/@cursoemvideo" target="_blank">CLIQUE AQUI</a>
     
 </body>
 </html>
