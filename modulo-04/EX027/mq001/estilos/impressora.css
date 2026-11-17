@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/*Estilo para Impressora*/
+
+* {
+    margin: 10px;
+    padding: 10px;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+menu {
+    display: none;
+}
+
+
+
+article {
+    width: 100%;
+}
+
+/*Tag para dar uma "marca d'agua, para a impressao, rodape*/
+article::after {
+    content: 'Esse artigo foi impresso através do site: www.meusite.com.br';
+}
+
+
